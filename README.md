@@ -6,8 +6,8 @@ Cloud Computing Mini Project (ICT 4441), School of Computer Engineering, Manipal
 
 | Name | Reg. No. |
 |---|---|
-| K. V. Aparna Karanth | 230911004 |
 | K. V. Ananth Karantha | 230911006 |
+| K. V. Aparna Karanth | 230911004 |
 | Tejas K Rao | 230911009 |
 | Amith U Nayak | 230911248 |
 
