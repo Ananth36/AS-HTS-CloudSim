@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Optional Maven build (for opening the project in IntelliJ / Eclipse / VS Code).
+  The scripts in scripts/ do NOT need Maven.
+  CloudSim is taken from the bundled lib/cloudsim-3.0.3-core.jar, so no internet is required.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>edu.manipal</groupId>
+    <artifactId>as-hts</artifactId>
+    <version>1.0</version>
+    <name>AS-HTS: Adaptive Starvation-Aware Hybrid Task Scheduler</name>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.cloudbus.cloudsim</groupId>
+            <artifactId>cloudsim</artifactId>
+            <version>3.0.3</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/cloudsim-3.0.3-core.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>edu.manipal.ashts.Main</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

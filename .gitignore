@@ -1,0 +1,8 @@
+build/
+results_quick/
+results/single/
+__pycache__/
+*.class
+.idea/
+*.iml
+target/
